@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeynn Dessert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zeynn Dessert 🍰</h1>
+    </header>
+        <!-- Sepet Alanı -->
+        <div id="cart-container">
+            <button id="cart-button">🛒 Sepete Git</button>
+            <div id="cart" class="hidden">
+                <h2>Sepetiniz</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Toplam: 0 TL</p>
+                <div class="cart-actions">
+                    <button id="clear-cart">İptal Et</button>
+                    <button id="checkout">Onayla</button>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menü</h2>
+            <ul>
+                <li><a href="#sutlu">🍮 Sütlü Tatlılar</a></li>
+                <li><a href="#serbetli">🍯 Şerbetli Tatlılar</a></li>
+                <li><a href="#cikolata">🍫 Çikolatalı Tatlılar</a></li>
+                <li><a href="#pasta">🍰 Pastalar</a></li>
+                <li><a href="#kurabiye">🍪 Kurabiyeler</a></li>
+                <li><a href="#dondurma">🍦 Dondurmalar</a></li>
+                <li><a href="#sicak">☕ Sıcak İçecekler</a></li>
+                <li><a href="#soguk">🥤 Soğuk İçecekler</a></li>
+            </ul>
+            <button id="scrollToTop">🔝 Başa Dön</button>
+        </nav>
+        <main class="content">
+            <section id="sutlu">
+                <h2>Sütlü Tatlılar</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/firin-sutlac-761703.webp" alt="Sütlaç">
+                        <h3>Sütlaç</h3>
+                        <p>Pirinç, süt ve şeker ile hazırlanan geleneksel tatlı.</p>
+                        <p class="price">50 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/Tavuk-göğsü-kazandibi_2-1024x1024.webp" alt="Kazandibi">
+                        <h3>Kazandibi</h3>
+                        <p>Yanık sütlü tatlı sevenler için mükemmel bir seçenek.</p>
+                        <p class="price">60 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/muhallebi-tarifi.webp" alt="Muhallebi">
+                        <h3>Muhallebi</h3>
+                        <p>Sade ve hafif bir sütlü tatlı, tercihe göre fındık veya tarçın eklenebilir.</p>
+                        <p class="price">50 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/0990425ad4040656f64fb6e64bfb497027ac2556.jpeg" alt="Tavukgöğsü">
+                        <h3>Tavukgöğsü</h3>
+                        <p>İnce tavuk lifleriyle hazırlanan yumuşak kıvamlı sütlü tatlı.</p>
+                        <p class="price">65 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/2cab109c744bce1e7184ce92905d1ecf8295ed08.avif" alt="Magnolia">
+                        <h3>Magnolia</h3>
+                        <p>Bisküvi, muz ve özel krema ile hazırlanan modern sütlü tatlı.</p>
+                        <p class="price">70 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/gullac2.webp" alt="Güllaç">
+                        <h3>Güllaç</h3>
+                        <p>Ramazan ayının vazgeçilmezi, gül suyu ve cevizle zenginleştirilmiş hafif tatlı.</p>
+                        <p class="price">75 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/60b6481918c77322a4a98a41.webp" alt="Keşkül">
+                        <h3>Keşkül</h3>
+                        <p>Badem aromalı, yoğun kıvamlı Osmanlı mutfağından bir lezzet.</p>
+                        <p class="price">65 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+            <section id="serbetli">
+                <h2>Şerbetli Tatlılar</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/fstkl_baklava.jpeg" alt="Baklava">
+                        <h3>Baklava</h3>
+                        <p>İncecik açılmış hamur, bol Antep fıstığı ve özel şerbet ile hazırlanan klasik tatlı. </p>
+                        <p class="price">90 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/-324-28-B.jpg" alt="Kadayıf">
+                        <h3>Kadayıf</h3>
+                        <p>Tel kadayıf hamuru, ceviz veya fıstık dolgusu ve şerbetin mükemmel uyumu.</p>
+                        <p class="price">80 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/kaymakli_kunefe-1fda980f-6b06-464f-8cbc-101155f01e3d.jpg" alt="Künefe">
+                        <h3>Künefe</h3>
+                        <p>Eritilmiş peynir dolgulu sıcak tatlı, çıtır kadayıf ve şerbet ile servis edilir.</p>
+                        <p class="price">110 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/sekerpare-1.webp" alt="Şekerpare">
+                        <h3>Şekerpare</h3>
+                        <p>İrmikli hamurun fırınlanıp şerbetle buluştuğu hafif bir tatlı.</p>
+                        <p class="price">60 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/revani_16_11zon.webp" alt="Revani">
+                        <h3>Revani</h3>
+                        <p>İrmik bazlı yumuşak kekin şerbetle birleştiği nefis tatlı.</p>
+                        <p class="price">70 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+            <section id="cikolata">
+                <h2>Çikolatalı Tatlılar</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/solen-kuvertur-cikolatali-sufle-tarifi.webp" alt="Çikolatalı sufle">
+                        <h3>Çikolatalı Sufle</h3>
+                        <p>Akışkan çikolata dolgulu sıcak tatlı, üzerine pudra şekeri ile servis edilir.  </p>
+                        <p class="price">90 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/starbucks-brownie-tarifi.webp" alt="Browni">
+                        <h3>Browni</h3>
+                        <p>Yoğun çikolatalı ve nemli kek, yanında dondurma ile mükemmel uyum. </p>
+                        <p class="price">85 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/hq720.jpg" alt="Mousse">
+                        <h3>Mousse</h3>
+                        <p>Hafif ve köpüksü kıvamıyla yoğun çikolatalı Fransız tatlısı.</p>
+                        <p class="price">80 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+            <section id="pasta">
+                <h2>Pastalar</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/Cilekli-Pasta-1.jpg" alt="Çilekli pasta">
+                        <h3>Çilekli Pasta</h3>
+                        <p>Taze çilekler, vanilyalı krema ve yumuşak pandispanya katmanlarıyla hafif ve lezzetli.</p>
+                        <p class="price">120 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/532019-muzlurulo-133215.jpg" alt="Muzlu Rulo Pasta">
+                        <h3>Muzlu Rulo Pasta</h3>
+                        <p>Hafif pandispanya arasında muz ve krema dolgusu, üzerine çikolata sosu. </p>
+                        <p class="price">110 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/fistikli.png" alt="Fıstıklı Pasta">
+                        <h3>Fıstıklı Pasta</h3>
+                        <p>Antep fıstıklı krema ve pandispanya katmanlarıyla lezzet şöleni. </p>
+                        <p class="price">135 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+            <section id="kurabiye">
+                <h2>Kurabiyeler</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/650x344-agizda-dagilan-damla-cikolatali-kurabiye-tarifi-damla-cikolata-kurabiye-nasil-yapilir-1586956792713.webp" alt="Çikolatalı Kurabiye">
+                        <h3>Çikolatalı Kurabiye</h3>
+                        <p>İçinde bol çikolata parçalarıyla yumuşak ve lezzetli. </p>
+                        <p class="price">60 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/un-kurabiyesi-tarifi-1-601x470.jpg" alt="Tereyağlı Un Kurabiyesi">
+                        <h3>Tereyağlı Un Kurabiyesi</h3>
+                        <p>Ağızda dağılan klasik un kurabiyesi, üzerine pudra şekeri serpilmiş.</p>
+                        <p class="price">55 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/hq720 (1).jpg" alt="Fındıklı Kavala Kurabiyesi">
+                        <h3>Fındıklı Kavala Kurabiyesi</h3>
+                        <p>Yunan mutfağından ilham alan, fındıklı ve pudra şekerli kıtır kurabiye.</p>
+                        <p class="price">65 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+            <section id="dondurma">
+                <h2>Dondurmalar</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/hms-haci-mehmet-san-sade-maras-dondurma-800x800.webp" alt="Klasik Maraş Dondurması">
+                        <h3>Klasik Maraş Dondurması</h3>
+                        <p>Süt ve salep ile hazırlanan yoğun kıvamlı vanilyalı dondurma. </p>
+                        <p class="price">70 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+            <section id="sicak">
+                <h2>Sıcak İçicekler</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/turk-kahvesi_800x.webp" alt="Türk Kahvesi">
+                        <h3>Türk Kahvesi</h3>
+                        <p>Geleneksel köpüklü Türk kahvesi, sade, orta veya şekerli seçenekleriyle.</p>
+                        <p class="price">50 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/indir.jpeg" alt="Espresso">
+                        <h3>Espresso</h3>
+                        <p>Yoğun aromalı, tek shot kahve severler için.</p>
+                        <p class="price">55 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/indir (1).jpeg" alt="Cappuccino">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso, sıcak süt ve köpüğün mükemmel dengesi.</p>
+                        <p class="price">65 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/indir (2).jpeg" alt="Latte">
+                        <h3>Latte</h3>
+                        <p>Yumuşak içimli sütlü kahve, isteğe bağlı vanilya veya karamel eklenebilir.</p>
+                        <p class="price">70 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/indir (3).jpeg" alt="Sıcak Çikolata">
+                        <h3>Sıcak Çikolata</h3>
+                        <p>Yoğun kakao ve sütle hazırlanan tatlı ve sıcak içecek.</p>
+                        <p class="price">70 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/indir (4).jpeg" alt="Bitki Çayı">
+                        <h3>Bitki Çayı</h3>
+                        <p>Papatya, adaçayı, ıhlamur veya yeşil çay seçenekleriyle doğal çay keyfi.</p>
+                        <p class="price">50 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/indir (5).jpeg" alt="Filtre Kahve">
+                        <h3>Filtre Kahve</h3>
+                        <p>Taze çekilmiş kahve çekirdeklerinden hazırlanan klasik kahve. </p>
+                        <p class="price">60 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+            <section id="soguk">
+                <h2>Soğuk İçicekler</h2>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="photo/img_0208-scaled.jpeg" alt="Su">
+                        <h3>Su (500ml)</h3>
+                        <p>Doğal kaynak suyu.</p>
+                        <p class="price">10 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/ghe8awM7.jpg" alt="Maden Suyu">
+                        <h3>Maden Suyu</h3>
+                        <p>Doğal mineralli ferahlatıcı içecek.</p>
+                        <p class="price">25 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/ca0c8b37-45dc-488a-b564-013e9852756633bbf021-8756-4754-945e-46536128cf93.jpg" alt="Limonata">
+                        <h3>Limonata</h3>
+                        <p>Taze sıkılmış limon suyu, hafif şeker ve nane ile serinletici lezzet.</p>
+                        <p class="price">55 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/62.webp" alt="İce Latte">
+                        <h3>İce Latte</h3>
+                        <p>Süt ve buzla hazırlanan hafif soğuk kahve.</p>
+                        <p class="price">75 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/ykv2021haziranweb21.webp" alt="Frappe">
+                        <h3>Frappe</h3>
+                        <p>Köpüklü soğuk kahve, isteğe göre çikolata veya karamel eklenebilir.</p>
+                        <p class="price">80 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/k_Photo_Recipes_2020-07-how-to-make-a-milkshake-at-home_2020-06-08_AT-K19388.jpeg" alt="Milkshake">
+                        <h3>Milkshake</h3>
+                        <p>Çikolata, çilek veya vanilya seçenekleriyle soğuk sütlü içecek. </p>
+                        <p class="price">85 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/taze-sikilmis-meyve-suyunu-saklamanin-en-iyi-yolu-1be8614d-5520-403e-8b57-0b40037da153.jpg" alt="Taze Meyve Suyu">
+                        <h3>Taze Meyve Suyu</h3>
+                        <p>Portakal, nar veya karışık meyve suyu seçenekleri. </p>
+                        <p class="price">70 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                    <div class="product">
+                        <img src="photo/b4bf8ae3-36ec-84db-86ee-55c4fe2ca663.jpg" alt="Buzlu Yeşil Çay">
+                        <h3>Buzlu Yeşil Çay</h3>
+                        <p>Ferahlatıcı yeşil çay, limon ve nane ile. </p>
+                        <p class="price">65 TL</p>
+                        <input type="number" value="1" min="1" title="Adet seçin" aria-label="Adet">
+                        <button>Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        let cart = [];
+    
+        document.querySelectorAll('.product button').forEach(button => {
+            button.addEventListener('click', function () {
+                let product = this.parentElement;
+                let name = product.querySelector('h3').innerText;
+                let priceText = product.querySelector('.price').innerText;
+                let price = parseInt(priceText.replace(' TL', '')); // Fiyatı al ve TL'yi kaldır
+                let quantity = parseInt(product.querySelector('input').value);
+    
+                let existingItem = cart.find(item => item.name === name);
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ name, price, quantity });
+                }
+                updateCart();
+            });
+        });
+    
+        function updateCart() {
+            let cartItemsList = document.getElementById('cart-items');
+            let totalPrice = document.getElementById('total-price');
+            cartItemsList.innerHTML = '';
+            let total = 0;
+    
+            cart.forEach(item => {
+                let li = document.createElement('li');
+                let itemTotal = item.price * item.quantity;
+                li.innerText = `${item.name} x ${item.quantity} = ${itemTotal} TL`;
+                cartItemsList.appendChild(li);
+                total += itemTotal;
+            });
+            totalPrice.innerText = `Toplam: ${total} TL`;
+            document.getElementById('cart-container').classList.remove('hidden');
+        }
+    
+        document.getElementById('cart-button').addEventListener('click', function () {
+            document.getElementById('cart').classList.toggle('hidden');
+        });
+    
+        document.getElementById('clear-cart').addEventListener('click', function () {
+            cart = [];
+            updateCart();
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToTop').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    
+    
+    
+</body>
+</html>
+

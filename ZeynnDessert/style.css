@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: #f8f3f2;
+}
+header {
+    background: linear-gradient(90deg, #a55048, #141100);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-family: 'Pacifico', cursive;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #a55048, #141100);
+    padding: 20px;
+    height: 300vh;
+    color: white;
+    text-align: center;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    width: 320px;
+    background: #fff3e0;
+    border-radius: 20px;
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+.product p {
+    font-size: 18px;
+    color: #555;
+}
+.product .price {
+    font-size: 20px;
+    color: #a55048;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product input {
+    width: 50px;
+    margin-top: 10px;
+    height: 20px;
+}
+.product button {
+    background: #a55048;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+}
+.product button:hover {
+    background: #930909b9;
+    transform: scale(1.1);
+}
+#cart-container {
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    background: linear-gradient(90deg, #83403a, #141100);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#cart-button {
+    background: linear-gradient(90deg, #a55048, #141100);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#cart.hidden {
+    display: none;
+}
+#cart {
+    margin-top: 10px;
+    background: #ede8e7;
+    padding: 10px;
+    border-radius: 8px;
+}
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cart-actions button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#clear-cart { background: #ccc; }
+#checkout { background: #a55048; color: #f8f3f2 }
+
+#scrollToTop {
+    background: linear-gradient(180deg, #a55048, #141100);
+    color: rgb(254, 238, 238);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px; /* Sidebar'ın en altında kalmasını sağlar */
+    left: 0;
+}
+
+.sidebar {
+    position: relative;
+    padding-bottom: 50px; /* Butonun görünmesini sağlamak için */
+}
+
+
